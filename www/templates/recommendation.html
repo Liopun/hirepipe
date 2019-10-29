@@ -1,0 +1,37 @@
+<ion-view view-title="Recommend Me">
+  <ion-nav-buttons side="right">
+        <button class="button button-icon button-clear ion-navicon butt1" ng-click="openMenu()"></button>
+  </ion-nav-buttons>
+  <ion-content>
+    <form ng-submit="">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Full Name</span>
+          <input type="text" ng-model="invite.name">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Email</span>
+          <input type="email" ng-model="invite.email">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Job Title</span>
+          <input type="text" ng-model="invite.job">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Company</span>
+          <input type="text" ng-model="invite.company">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Relationship</span>
+          <input type="text" ng-model="invite.company">
+        </label>
+        <label class="item item-input">
+          <textarea ng-model="invite.message" placeholder="Short Message"></textarea>
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">Send</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>

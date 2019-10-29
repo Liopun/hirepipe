@@ -1,0 +1,39 @@
+<!-- this is the page where you enter your information to request information  -->
+<ion-view view-title="Enter your Informations" style="background-image:url('img/stock.jpg');background-size:cover;">
+  <ion-nav-buttons side="right">
+    <button class="button button-icon button-clear ion-navicon" ng-click="openMenu()"></button>
+  </ion-nav-buttons>
+  <ion-content>
+	   <div class="list padding">
+        <label class="item item-input">
+          <input type="text" placeholder="First Name">
+        </label>
+        <label class="item item-input">
+          <input type="text" placeholder="Last Name">
+        </label>
+        <label class="item item-input">
+          <input type="text" placeholder="Email">
+        </label>
+        <label class="item item-input">
+          <input type="tel" placeholder="Phone number">
+        </label>
+        <label class="item item-input">
+          <input type="text" placeholder="Job Title">
+        </label>
+        <label class="item item-input">
+          <input type="text" placeholder="Company Name">
+        </label>
+        <label class="item item-input">
+          <input type="text" placeholder="Address">
+        </label>
+        <label class="item item-input">
+          <textarea placeholder="Comments"></textarea>
+        </label>
+        <div class="padding">
+          <button class="button button-positive pull-left button-default" ui-sref="">Request</button>
+          <button class="button button-assertive pull-right button-default">Cancel</button>
+        </div>
+        
+     </div>
+  </ion-content>
+</ion-view>

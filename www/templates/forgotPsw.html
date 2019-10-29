@@ -1,0 +1,28 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Recover Your Password</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeRecover()"><b>close</b></button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form ng-submit="doRecover()">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Email</span>
+          <input type="email" ng-model="recover.email">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Phone Number</span>
+          <input type="tel" ng-model="recover.tel">
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">Recover</button>
+        </label>
+      </div>
+    </form>
+    <label class="padding">
+          Reset link will be sent to your email so that you can reset your password properly.<br>This link will expire in 24hrs.
+    </label>
+  </ion-content>
+</ion-modal-view>

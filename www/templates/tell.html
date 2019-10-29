@@ -1,0 +1,23 @@
+<ion-view view-title="Tell a friend" class="view2">
+  <ion-nav-buttons side="right">
+      <button class="button button-icon button-clear ion-navicon" ng-click="openMenu()"></button>
+  </ion-nav-buttons>
+  <ion-content class="padding">
+      <h4 class="text1"></h4>
+      <div class="plug">
+        <div class="img2 img3">
+          <img src="img/messages.png"class="full-image" ng-click="shareViaSMS('Hello Putu im using HirePipe to post my Qualifications and Hire the Best employees in The East Africa','0784573324')">
+          
+        </div>
+        <div class="img2 img4">
+          <img src="img/facebook.png" class="full-image" ng-click="shareViaFacebook('Hello Putu im using HirePipe to post my Qualifications and Hire the Best employees in The East Africa',null,'nuntu.hehelabs.com/hirepipe')">
+        </div>
+      </div>  
+      <div class="img2 img3"> 
+        <img src="img/whatsapp.png" class="full-image" ng-click="shareViaWhatsApp('Hello Putu im using HirePipe to post my Qualifications and Hire the Best employees in The East Africa',null,'nuntu.hehelabs.com/hirepipe')">
+      </div>
+      <div class="img2 img4">
+        <img src="img/email.png" class="full-image" ng-click="shareViaEmail('Hello Putu im using HirePipe to post my Qualifications and Hire the Best employees in The East Africa. www.nuntu.hehelabs.com/hirepipe','Hey Check Out this Cool App','ccaptone@gmail.com',null, null)">      
+      </div>
+  </ion-content>
+</ion-view>

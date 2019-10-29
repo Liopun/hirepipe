@@ -1,0 +1,51 @@
+<ion-view view-title="Personal information" class="view1">
+  <ion-nav-buttons side="right">
+      <button class="button button-icon button-clear ion-navicon" ng-click="openMenu()"></button>
+  </ion-nav-buttons>
+
+  <ion-content class="padding">
+    <div>
+      <label class="item item-input">
+        <input type="text" placeholder="First Name">
+      </label>
+    </div>
+    <div>
+      <label class="item item-input">
+        <input type="text" placeholder="Last Name">
+      </label>
+    </div>
+    <label class="item item-input">
+      <input type="date" placeholder="Date of birth">
+    </label>     
+    <label class="item item-input item-select">
+      <div class="input-label">
+        Sex
+      </div>
+      <select>
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+    </label>
+    <div>
+      <label class="item item-input">
+        <input type="email" placeholder="email" required>
+      </label>
+    </div> 
+    <div>
+      <label class="item item-input">
+        <input type="password" placeholder="password">
+      </label>
+    </div> 
+    <div>
+      <label class="item item-input">
+        <input type="password" placeholder="retype password" required>
+      </label>
+    </div> 
+    <div>
+      <label class="item item-input">
+        <input type="text" placeholder="phone number" required>
+      </label>
+    </div>
+    <p><a href="#/tab/profile/update"><center><button class="button button-default btnS">Save</button></center></a></p>
+  </ion-content>
+</ion-view>

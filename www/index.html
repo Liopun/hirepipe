@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link href="lib/bootstrap/bootstrap.css" rel="stylesheet">
+
+    <!-- compiled css output -->
+    <link href="css/ionic.app.css" rel="stylesheet">
+
+    <!-- compiled css output -->
+    <link href="css/style.css" rel="stylesheet">
+      
+    <!--jrCrop plugin-->
+    <link href="lib/jrCrop/dist/jr-crop.css" rel="stylesheet">
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    
+    <!-- ngCordova -->
+    <!-- IMPORTANT : SHOULD be after ionic bundle and before cordova.js -->
+    <script src="lib/ngCordova/dist/ng-cordova.min.js"></script>
+    
+      
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- bootstrap and jquery -->
+    <script src="lib/bootstrap/jquery.js"></script>
+    <script src="lib/bootstrap/bootstrap.min.js"></script>
+    <!-- app's js -->
+    <script src="lib/jrCrop/dist/jr-crop.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/services.js"></script>
+  </head>
+  <body ng-app="myApp">
+    <!--
+      The nav bar that will be updated as we navigate between views.
+    -->
+    <ion-side-menus>
+      
+      <ion-pane ion-side-menu-content>
+        <ion-nav-bar class="bar-positive nav-title-slide-ios">
+          <ion-nav-back-button class="button-icon"><span class="icon ion-ios-arrow-left"></span></ion-nav-back-button>
+        </ion-nav-bar>
+        <ion-nav-view></ion-nav-view>
+      </ion-pane>
+
+      <ion-side-menu side="right">
+        <ion-header-bar class="bar bar-header bar-positive">
+          <h1 class="title">Menu</h1>
+        </ion-header-bar>
+        <ion-content has-header="true">
+          <ion-list>
+
+            <ion-item class="item-icon-left" href="#/tab/profile" menu-close> 
+              <i class='icon ion-ios-person'></i><b>Home</b>
+            </ion-item>
+            <ion-item class="item-icon-left" href="#/about" menu-close> 
+              <i class='icon ion-ios-information'></i><b>About</b>
+            </ion-item>
+            <ion-item class="item-icon-left" href="#/tell" menu-close> 
+              <i class='icon ion-speakerphone'></i><b>Tell a Friend</b>
+            </ion-item>
+            <ion-item class="item-icon-left" href="#/contact" menu-close> 
+              <i class='icon ion-card'></i><b>Contact Us</b>
+            </ion-item>
+            <ion-item class="item-icon-left" ui-sref="login" menu-close> 
+              <i class='icon ion-log-out'></i><b>Log out</b>
+            </ion-item>
+
+          </ion-list>
+        </ion-content>
+      </ion-side-menu>
+      
+    </ion-side-menus>
+    
+    <script id="tabs.html" type="text/ng-template">
+      <ion-view title="Home">
+
+        <ion-nav-buttons side="right">
+          <button class="button button-icon button-clear ion-navicon" ng-click="openMenu()"></button>
+        </ion-nav-buttons> 
+        
+
+        <ion-tabs class="tabs-striped tabs-positive tabs-icon-top">
+
+          <ion-tab title="Profile" icon-on="ion-ios-person" icon-off="ion-ios-person-outline" href="#/tab/profile">
+            <ion-nav-view name="profile-tab"></ion-nav-view>
+          </ion-tab>
+
+          <ion-tab title="Notifications" icon-on="ion-ios-bell" icon-off="ion-ios-bell-outline" href="#/tab/notification" >
+            <ion-nav-view name="notification-tab"></ion-nav-view>
+          </ion-tab>
+
+          <ion-tab title="Endorsements" icon-on="ion-ios-paper" icon-off="ion-ios-paper-outline" href="#/tab/endorsement">
+            <ion-nav-view name="endorsement-tab"></ion-nav-view>
+          </ion-tab>
+
+          <ion-tab title="Recommend Me" icon-on="ion-ribbon-b" icon-off="ion-ribbon-b" href="#/tab/reco">
+            <ion-nav-view name="reco-tab"></ion-nav-view>
+          </ion-tab>
+
+        </ion-tabs>
+      </ion-view>
+    </script>
+  
+           
+  </body>
+
+</html>

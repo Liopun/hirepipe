@@ -1,0 +1,52 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Create Invitation</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeInvite()"><b>close</b></button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form ng-submit="doInvite()">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Full Name</span>
+          <input type="text" ng-model="invite.name">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Phone Number</span>
+          <input type="tel" ng-model="invite.tel">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Email</span>
+          <input type="email" ng-model="invite.email">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Job Title</span>
+          <input type="text" ng-model="invite.job">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Company</span>
+          <input type="text" ng-model="invite.company">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Location</span>
+          <input type="text" ng-model="invite.loc">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Date</span>
+          <input type="date" ng-model="invite.date">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Time</span>
+          <input type="time" ng-model="invite.time">
+        </label>
+        <label class="item item-input">
+          <textarea ng-model="invite.message" placeholder="Short Message"></textarea>
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">Send</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>

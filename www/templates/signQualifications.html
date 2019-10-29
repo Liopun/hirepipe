@@ -1,0 +1,39 @@
+<ion-view view-title="Qualifications" class="view1">
+  <ion-nav-buttons side="right">
+    <button class="button button-icon button-clear ion-android-done" ng-click="canIcontinue(quaData)">Next</button>
+  </ion-nav-buttons>
+
+  <ion-content class="padding">
+    <label class="item item-input item-select">
+      <div class="input-label">Industry</div>
+      <select ng-model="quaData.industry">
+        <option>Computer Engineering</option>
+        <option>Accoutancy</option>
+        <option>Business Administration</option>
+        <option>Civil Engineering</option>
+        <option>Drama</option>
+        <option>Journalism</option>
+        <option>Legal</option>
+        <option>Music</option>
+        <option>Agriculture</option>
+        <option>Telecommunications </option>
+        <option>Consulting </option>
+        <option>Financial Services</option>
+        <option>Transportation</option>
+        <option>Others</option>
+      </select>
+    </label> 
+    <label class="item item-input item-select">
+      <div class="input-label">Status</div>        
+      <select ng-model="quaData.status">
+        <option>Employed</option>
+        <option>Unemployed</option>
+      </select>
+    </label>
+    <div>
+      <label class="item item-input">
+        <textarea ng-model="quaData.shortNote" type="text" placeholder="Other qualifications"></textarea>
+      </label>
+    </div>
+  </ion-content>
+</ion-view>

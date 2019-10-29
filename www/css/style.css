@@ -1,0 +1,203 @@
+/* Empty. Add your own CSS if you like */
+a {
+	text-decoration: none;
+}
+.subMit, .subMit button {
+	background:rgba(0,0,0,0);
+	border-color:rgba(0,0,0,0);
+}
+
+.button :active, .btn:active {
+	background-color:rgba(255,255,255,0);
+}
+
+.butt{
+ background-color:rgba(255,255,255,0.2);
+ color:#773344;
+ border-radius:0px ;
+ border:1px solid #773344;
+}
+.img{
+	opacity:1;
+	width: 60%;
+	margin-top: 90px;
+	border-radius: 2px;
+
+}
+.butt11{
+	margin: 40px 0px;
+}
+.image{
+	width: 60%;
+	border-radius:100%;
+	margin: 10px;
+}
+.links{
+	color: #773344;
+}
+.forms{
+	background-color:#f3f3f3;
+}
+.lii{
+	background:rgba(255,255,255,0.5);
+}
+.circ{
+	width:40%;
+	border-radius:50%;
+	
+}
+
+.buttss{
+	width: 45%;
+	float:center;
+
+}
+.input-label{
+	font-weight:normal;
+	color:#004056;
+}
+.options{
+	font-weight:normal;
+}
+
+.item-avatar{
+	border-width:0px;
+	background: rgba(255,255,255,0.9);
+}
+.desi{
+	text-align:justify;
+	font-size: 13px;
+	color: #535353;
+	margin-top:10px;
+	padding-right:10px;
+	padding-left: 10px;
+}
+.para{
+	text-align: center;
+	font-size: 13px;
+}
+.allbx, select{
+    background-color: rgba(255,255,255,0.0);
+    color: #3f5765;
+    font-weight:normal;
+    border-radius:0px;
+  }
+  .btnS {
+    background-color:transparent;
+    color:#004056;
+    border-radius:0px ;
+    border:1px solid #004056;
+    font-weight: normal;
+    font-size: 15px;
+  }
+  .card {
+    background-color:rgba(255,255,255,1);
+    border-radius:0px;
+    box-shadow: none;
+  }
+  .item-divider {
+    background-color: #004056;
+    color:#fff;
+  }
+  .view1{
+    background-color:#9bbfab;
+  }
+.btnS{
+	background-color:transparent;
+	color:#fff;
+	border-radius:0px ;
+	border:1px solid #fff;
+}
+.cont{
+	background-color:transparent;
+	color:#004056;
+	border-radius:0px ;
+	border:1px solid #004056;
+
+}
+.view{
+	background-color:#004056;
+}
+.textco{
+	color:#3f5765;
+	text-align: center;
+	padding-top: 4px;
+}
+.btns1{
+	border: 1px solid #3f5765;
+	border-radius: 0px;
+	color: #3f5765;
+	background-color: transparent;
+}
+.profile{
+	background-color:rgba(255,255,255,0.9);
+}
+.btns2{
+	float:left;
+	margin-left:10px;
+}
+.btns3{
+	float: right;
+	margin-right:10px;
+	color:#fff;
+	background: #004056;
+}
+.all a{
+		background:rgba(255,255,255,0.9);
+		border-color: #814453;
+}
+i{
+  font-size: 40px;
+
+}
+.plus{
+	color:#004056;
+	margin: 10px;
+}
+.para1{
+	font-size: 17px;
+	margin:10px;
+}
+.profile1{
+	background-color: white;
+	padding-bottom: 20px;
+}
+.invite{
+	width:49%;
+}
+p{
+	font-size: 12px;
+
+}
+.view2{
+	background: #004056;
+}
+.img1{
+	opacity:1;
+	width: 70%;
+	margin-top:0px;
+	border-radius: 0px;
+}
+.desi1{
+	color:white;
+	text-align: center;
+}
+.desi2{
+	margin-top: 50px;
+}
+.img2{
+	width:80px;
+	height:80px;
+	margin:30px;
+}
+.plug{
+	clear: both;
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+.img3{
+	float: left;
+}
+.img4{
+	float: right;
+}

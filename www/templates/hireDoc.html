@@ -1,0 +1,37 @@
+<ion-modal-view>
+  <ion-header-bar>
+    <h1 class="title">Get Relevant Documents</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeDoc()"><b>close</b></button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form ng-submit="doDoc()">
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">Firstname</span>
+          <input type="text" ng-model="docs.first">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Lastname</span>
+          <input type="text" ng-model="docs.second">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Email</span>
+          <input type="email" ng-model="docs.email">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Job Title</span>
+          <input type="text" ng-model="docs.job">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Company</span>
+          <input type="text" ng-model="docs.company">
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">Submit</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-modal-view>

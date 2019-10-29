@@ -1,0 +1,44 @@
+<!-- this is the page where you sign up -->
+<ion-view view-title="Personal Info" class="view1">
+  <ion-nav-buttons side="right">
+    <button class="button button-icon button-clear ion-android-done" type="submit" ng-click="perContinue(personal)">Next</button>
+  </ion-nav-buttons>
+  <ion-content>
+	  <form name="PerForm" role="form">
+      <div class="list list-inset" style="background:none;">
+        <label class="item item-input">
+          <input type="text" ng-model="personal.firstname" placeholder="First Name">
+        </label>
+        <label class="item item-input">
+          <input type="text" ng-model="personal.lastname" placeholder="Last Name">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">Date of Birth</span>
+          <input ng-model="personal.dob" type="date" placeholder="yyyy-MM-dd">
+        </label>
+        <label class="item item-input item-select">
+          <div class="input-label">Sex</div>          
+          <select ng-model="personal.sex">
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+        </label>
+        <div>
+          <label class="item item-input">
+            <input ng-model="personal.email" type="text" placeholder="Email">
+          </label>
+          <label class="item item-input">
+          <span class="input-label">Phone Number</span>
+            <input ng-model="personal.tel" type="tel" placeholder="+250784573324">
+          </label>
+          <label class="item item-input">
+            <input ng-model="personal.password" type="password" placeholder="Password">
+          </label>
+          <label class="item item-input">
+            <input ng-model="personal.retype_password" type="password" placeholder="Retype password">
+          </label>
+        </div>  
+      </div>
+    </form>
+  </ion-content>
+</ion-view>
