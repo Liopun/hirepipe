@@ -21,7 +21,7 @@ $ cd hirepipe/
 $ ionic serve
 ```
 
-Npm is for Node.Js, visit this [page](https://nodejs.org/en/download/), if u haven't installed it on your computer yet.
+For Node.Js, visit this [page](https://nodejs.org/en/download/), if you haven't installed it on your computer yet.
 
 For more information about Ionic Framework, visit the [Ionic Docs](https://ionicframework.com/getting-started).
  
